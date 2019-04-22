@@ -1,6 +1,5 @@
 # disable confirm
 $ConfirmPreference="None"
-
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module -Name VMware.PowerCLI -Scope CurrentUser -Force -AllowClobber
-Install-Module -Name VMware.ImageBuilder -Scope CurrentUser -RequiredVersion 6.7.0.11233116 -Force
 Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false
