@@ -1,1 +1,1 @@
-Install-Module -Name VMware.PowerCLI -SkipPublisherCheck
+Install-Module -Name VMware.PowerCLI -SkipPublisherCheck -Scope CurrentUser -Confirm
