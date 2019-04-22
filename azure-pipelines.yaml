@@ -3,6 +3,12 @@ pool:
 
 steps:
 - task: PowerShell@2
+  displayName: 'Check environment'
+  inputs:
+    targetType: filePath
+    filePath: './Check-Env.ps1'
+
+- task: PowerShell@2
   displayName: 'Install dependencies'
   inputs:
     targetType: filePath
